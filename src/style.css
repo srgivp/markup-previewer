@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.сheck {
+  position: relative;
+  top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.relativeContainerHeader {
+  position: relative;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.containerHeader {
+  position: absolute;
+  color: azure;
+  font-size: 1.5rem;
+  background-color: rgb(155, 154, 150);
+  padding-left: 10px;
+  top: 0;
+  width: 100%;
+}
+.mainBlock {
+  width: 100%;
+  height: 100%;
+  padding: 10px 5px 10px 10px;
+  position: relative;
+  overflow: scroll;
+  list-style: inside;
+}
+textarea {
+  border: none;
+}
+#editorContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+}
+#previewerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+}
+img[src*="smile"] {
+  height: 10vw;
+  width: 10vw;
+}
+@media only screen and (max-width: 768px) {
+  .сheck {
+    height: 100vh;
+    flex-direction: column;
+  }
+  #editorContainer,
+  #previewerContainer {
+    width: 100%;
+    height: 50%;
+  }
+}
